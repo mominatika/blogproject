@@ -22,7 +22,9 @@ class usermodel extends database
 	}
 	public function updateAdminUserStatus($status,$userId)
 	{
-		if($this->query("UPDATE `user` SET `userStatus`= ? WHERE `user_id` = ?",[$status,$userId]))
+		// echo $status;
+		// echo $userId;
+		if($update=$this->query("UPDATE `user` SET `userStatus`= ? WHERE `user_id` = ?",[$status,$userId]))
 		{
 			echo $status;
 		}
