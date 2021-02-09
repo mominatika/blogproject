@@ -1,0 +1,28 @@
+.profile-head {
+    transform: translateY(5rem)
+}
+
+.cover {
+    background: black;
+
+    /*background-image: url(https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1352&q=80);*/
+    /*background-size: cover;*/
+    /*background-repeat: no-repeat*/
+    color:   white;
+}
+
+body {
+    /*background: #654ea3;*/
+    /*background: linear-gradient(to right, #e96443, #904e95);*/
+    min-height: 100vh
+}
+.profile img{
+    height: 100px;
+    width: 100px;
+}
+.formErr{
+    color: red;
+    /*border: 1px solid red;*/
+    /*margin-right: 500px;*/
+
+}
