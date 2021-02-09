@@ -66,17 +66,7 @@ class AdCategory extends database
 
 	}
 	
-	public function Allcategory()
-	{
-		if($this->query("SELECT * FROM `category` ORDER BY `created_at`  DESC  "))
-		{
-			return $fetch=$this->fetchAll();
-		}
-		else
-		{
-			echo 0;
-		}
-	}
+	
 
 	public function fetchCategory($cate_id)
 	{

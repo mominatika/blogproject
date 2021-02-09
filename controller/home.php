@@ -12,7 +12,7 @@ class home extends controller
 	{
 
 
-		$this->cateModel = $this->model('admin/adCategory');
+		$this->cateModel = $this->model('admin/addSubcategories');
 		$this->usermodel=$this->model('user/usermodel');
 		$this->blogmodel = $this->model('user/blogmodel');
 
@@ -31,7 +31,7 @@ class home extends controller
 		{
 			// echo 0;
 		}
-		$data['categories'] = $this->cateModel->Allcategory();
+		$data['categories'] = $this->cateModel->fetchAllcategory();
 		$data['allBlogs'] = $this->blogmodel->HomepageBlog();
 		$this->view('userview/index',$data);
 	}

@@ -23,7 +23,7 @@ class signUp extends database
 
 	public function doRegister($data)
 	{
-		if($this->query("INSERT INTO `user`(`userName`, `email`, `password`,`userStatus`) VALUES (?,?,?,'inactive')",$data))
+		if($this->query("INSERT INTO `user`(`userName`, `email`, `password`,`userStatus`) VALUES (?,?,?,'active')",$data))
 		{
 			return true;
 		}
