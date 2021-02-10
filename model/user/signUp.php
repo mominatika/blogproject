@@ -31,8 +31,7 @@ class signUp extends database
 		{
 			return false;
 		}
-
-	}
+		}
 
 }
 

@@ -29,6 +29,17 @@ class AdCategory extends database
 		}
 
 	}
+	
+	public function Allcategory()
+	{
+		if($this->query("SELECT * FROM `category`"))
+		{
+			if($fetch=$this->fetchAll())
+			{
+				return $fetch;
+			}
+		}	
+	}
 	public function checkcate($cate)
 	{
 		if($this->query('SELECT  `category`  FROM `category` WHERE `category`= ?',[$cate]))
